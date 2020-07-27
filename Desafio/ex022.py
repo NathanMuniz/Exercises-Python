@@ -1,0 +1,11 @@
+frase = input('Digite seu nome inteiro')
+frasem = frase.upper()
+print(frasem)
+print(frase.lower())
+frased = frase.split()
+frasej = (''.join(frased))
+PRONT = (len(frasej))
+print('Existem {} caracter sem considerar espaços'.format(PRONT))
+primeiron = (frased[0])
+print(len(primeiron))
+
