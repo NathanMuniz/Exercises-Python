@@ -14,7 +14,7 @@ for jog in range(1, n + 1):
         pc = randint(1, 60)
         if pc not in lista:
             lista.append(pc)
-    lista.sort()
-    print(f"Jogo {jog}: {lista}")
+    listaPrin.sort
+    print(f"Jogo {jog}: {listaPrin}")
     sleep(0.8)
 print(20 * "-=" + " < BOA SORTE! >" + 20 * "-=")
