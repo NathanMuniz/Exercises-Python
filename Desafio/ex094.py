@@ -1,5 +1,5 @@
 pessoa = dict()
-pessoas = list()
+pessoas = list() 
 som = 0
 # pedir dados das pessoas
 run = True
@@ -9,7 +9,7 @@ while run:
 
     # Verificar se sexo foi corretamente digitado
     while True:
-        pessoa["sexo"] = str(input("Sexo: [M|F] ")).upper()
+        pessoa["sexo"] = str(input("Sexo: [M|F] ")).upper() 
         if pessoa["sexo"] not in "MF":
             print("[ERRO] Digite apena M ou F")
         else:
@@ -42,7 +42,8 @@ print(f"B) A Média da idadae é de {media:.2f} anos.")
 print("C) As mulheres cadastradas foram ", end=" ")
 for p in pessoas:
     if p["sexo"] == "F":
-        print(F"\n{p['nome']}")
+        print(f"{p['nome']}", end="")
+        print()
 
 # Mostrar pessoas acima da Média
 print("Lista de pessoas que estão acima da média: ", end=" ")
