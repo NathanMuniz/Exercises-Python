@@ -1,14 +1,13 @@
 def fatorial(num, show=False):
-    fato = 1
+    f = 1
     for c in range(num, 0, -1):
         if show:
-            print(f"{c}", end="")
+            print(f"{c}", end=" ")
             if c > 1:
-                print(" X ", end="")
+                print(" X ", end=" ")
             else:
-                print(" = ", end="")
-        fato *= c
-    return fato
-    
+                print(f" = ", end="")
+        f *= c
+    return f
 
 print(fatorial(5, False))
