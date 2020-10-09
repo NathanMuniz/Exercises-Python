@@ -40,13 +40,12 @@ def resumo(preco, aumento=0, baixa=0):
 
 
 def validar(sms):
-    r = float(input(f" {sms}"))
-        
-    preco = str(r)
+    preco = str(input(f"{sms}"))
+    preco = preco.replace("," , ".")
     while is_a_number(preco) != True:
-        print(f'ERRO> "{preco.strip()} é um preço inválido"')
+        print(f'ERRO: "{preco.strip()}" é um preço inválido')
         preco = input(f"{sms}")
-    return r
+    return float(preco)
 
 
 def is_a_number(n):
